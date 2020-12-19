@@ -1,0 +1,157 @@
+.top{
+  .archive{
+    margin-bottom: 150px;
+    .content-width{
+      position: relative;
+    }
+    .com-btn{
+      position: absolute;
+      right: 71px;
+      top:25px;
+    }
+  }
+
+  .sec02{
+    margin-bottom: 95px;
+    &-wrap{
+      display: flex;
+      align-items: center;
+      @include media($mobile){
+        flex-wrap: wrap;
+      }
+      &-txt{
+        padding: 120px 0px;
+        padding-left: calc((100vw - 1000px) / 2);
+        width: calc(667 * (100vw / 1200));
+        background-color: #fff;
+        .top-title-h2{
+          position: relative;
+          margin-bottom: 30px;
+          &:before{
+            content: '';
+            width: 18px;
+            height: 2px;
+            background: #ff1800;
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+          }
+          &:after{
+            content: '';
+            width: 60px;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            bottom:0px;
+            left: 18px;
+          }
+        }
+        p{
+          font-size: 2rem;
+          font-weight: bold;
+          line-height: 2.1;
+          margin-bottom: 20px;
+        }
+      }
+      &-img{
+        //width: calc(620 * (100vw / 1200));
+        width: 620px;
+        position: relative;
+        z-index: 2;
+        left: -90px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sec03{
+    background-color: #fff;
+    padding: 95px 0px;
+    margin-bottom: 95px;
+    .content-width{
+      position: relative;
+    }
+    .top-title-h2{
+      margin-bottom: 40px;
+    }
+    &-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      &-item{
+        width: 227px;
+        margin-right: 30.6px;
+        &:nth-child(4n){
+          margin-right: 0px;
+        }
+        &-img{
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 1.6rem;
+          font-weight: bold;
+          position: relative;
+          margin: 0px;
+          padding-right: 15px;
+          text-align: center;
+          &:before,&:after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            width: 8px;
+            height: 1.5px;
+            position: absolute;
+            right: 3px;
+            background: #000;
+          }
+          &:before{
+            top: 14.5px;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+          &:after{
+            top: 9px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+        }
+      }
+    }
+    .com-btn{
+      position: absolute;
+      right: 71px;
+      top:0px;
+    }
+  }
+
+  .shop{
+    margin-bottom: 95px;
+    &-wrap{
+      display: flex;
+      &-txt{
+        width: 40%;
+        background-color: #fff;
+        padding-top: 28px;
+        p{
+          text-align: center;
+          font-size: 1.4rem;
+          line-height: 1.78;
+          margin-bottom: 15px;
+          font-weight: bold;
+        }
+        h2{
+          width: 263px;
+          margin: 0 auto 15px;
+        }
+      }
+      &-img{
+        width: 60%;
+      }
+    }
+  }
+}

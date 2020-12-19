@@ -1,0 +1,233 @@
+.com-contact{
+  &-h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 1px solid #000;
+    padding-top: 25px;
+  }
+  p{
+    font-size: 1.6rem;
+    line-height: 1.875;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &-wrap{
+    width: 100%;
+    margin: 0px auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    @include media($middle){
+      padding: 0px 5%;
+    }
+    &-link{
+      display: block;
+      padding: 65px 0px;
+      position: relative;
+      &:hover{
+        &::after{
+          transform: translateX(10px);
+        }
+      }
+      &:after{
+        content: '';
+        display: block;
+        width: 57px;
+        height: 57px;
+        right: 65px;
+        top:calc(50% - 28.5px);
+
+        position: absolute;
+        background-image: url('./assets/img/icon/icon-arrow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all .3s ease;
+      }
+      h3{
+        font-size: 3.5rem;
+        font-family: $font-en;
+        text-align: center;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+        &:before{
+          content: '';
+          width: 32px;
+          height: 2px;
+          background: #ff1800;
+          position: absolute;
+          bottom:0px;
+          right: 50%;
+        }
+        &:after{
+          content: '';
+          width: 32px;
+          height: 2px;
+          background: #000;
+          position: absolute;
+          bottom:0px;
+          left: 50%;
+        }
+      }
+      p{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+.footer{
+  padding: 30px 0px;
+  &-wrap{
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+    @include media($middle){
+      padding: 0px 5%;
+    }
+    &-logo{
+      width: 137px;
+      margin: 0 auto 25px;
+      a{
+        display: block;
+      }
+    }
+    &-list{
+      display: flex;
+      margin-bottom: 30px;
+      @include media($middle){
+        flex-wrap: wrap;
+      }
+      li{
+        display: inline-block;
+        margin-right: 40px;
+        &:last-child{
+          margin-right: 0px;
+        }
+        a{
+          font-size: 12px;
+          font-weight: bold;
+        }
+        img{
+          width: 25px;
+        }
+      }
+    }
+    &-info{
+      text-align: center;
+      margin-bottom: 23px;
+      li{
+        display: inline-block;
+        font-size: 12px;
+        margin-bottom: 0px;
+        &:first-child{
+          display: block;
+          margin-bottom: 5px;
+        }
+        &:nth-child(2){
+          margin-right: 25px;
+        }
+        &:nth-child(3){
+          margin-right: 5px;
+        }
+        a{
+          font-size: 1.6rem;
+          font-family: $font-en;
+          position: relative;
+          padding-left: 15px;
+          &:before{
+            position: absolute;
+            content: '';
+            width: 13px;
+            height: 13px;
+            display: block;
+            left: 0px;
+            top:3px;
+            background-image: url('./assets/img/icon/icon-tel.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+    .copyright{
+      font-size: 1.2rem;
+      color: #c0992e;
+      text-align: center;
+      margin: 0px;
+      font-family: $font-en;
+    }
+
+  }
+  &-fixed{
+    position: fixed;
+    right: 0px;
+    bottom: 45%;
+    &-contact{
+      a{
+        display: block;
+
+        .footer-fixed-contact-img{
+          transform: translateX(10px);
+        }
+        &:hover{
+          .footer-fixed-contact-img{
+            animation:ani-yoko 1s ease 0s infinite normal;
+            img{
+              transition: transform 0.5s ease;
+              animation:ani 3s ease 0s infinite normal;
+            }
+          }
+          @keyframes ani{
+            0%{
+      				//transform: translateX(0px);
+              transform: rotate(0deg);
+
+      			}
+      			50%{
+              //transform: translateX(10px);
+              transform: rotate(-10deg);
+      			}
+      			100%{
+      				//transform: translateX(0px);
+              transform: rotate(0deg);
+      			}
+          }
+          @keyframes ani-yoko{
+            0%{
+      				transform: translateX(10px);
+      			}
+      			50%{
+              transform: translateX(0px);
+      			}
+      			100%{
+      				transform: translateX(10px);
+      			}
+          }
+        }
+        span{
+          display: inline-block;
+          font-size: 2.0rem;
+          font-family: $font-en;
+          -ms-writing-mode: tb-rl;
+          -o-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+          -webkit-writing-mode: vertical-rl;
+          transform: rotate(-180deg);
+          line-height: 2;
+        }
+      }
+
+      &-img{
+        width: 44px;
+        img{
+          transform: translateX(0px);
+        }
+      }
+
+    }
+  }
+}

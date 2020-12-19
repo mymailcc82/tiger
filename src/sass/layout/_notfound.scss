@@ -1,0 +1,59 @@
+.notfound{
+  margin-top: 60px;
+  &-title{
+    margin-bottom: 30px;
+    h1{
+      font-size: 3.0rem;
+      color: $color-green;
+      text-align: center;
+      font-weight: bold;
+      @include media($mobile){
+        font-size: 2.4rem;
+      }
+    }
+  }
+  &-desc{
+    margin-bottom: 30px;
+    p{
+      text-align: center;
+      line-height: 1.8;
+      margin: 0px;
+    }
+  }
+
+  &-btn{
+  width: 370px;
+  margin: 0 auto;
+  @include media($mobile){
+    width: 240px;
+    margin:  0 auto;
+  }
+   a{
+      display: block;
+      text-align: center;
+      color: #fff;
+      border-radius: 38px;
+      font-size: 2.0rem;
+      line-height: 1;
+      background-color: #f5960d;
+      box-shadow:4px 3px 0px 2px #d18313;
+      position:relative;
+      padding: 20px 0px;
+      @include media($mobile){
+        box-shadow:2px 2px 0px 1px #d18313;
+        width: 240px;
+        padding: 15px 0px;
+        font-size: 1.5rem;
+      }
+
+      &:hover{
+        @include media($large){
+          opacity: 1;
+          box-shadow: none;
+          top: 6px;
+          left: 5px;
+        }
+      }
+    }
+  }
+}

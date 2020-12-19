@@ -1,0 +1,273 @@
+body{
+  background-color: $color-main;
+}
+.com-page-title{
+  margin-bottom: 70px;
+  h1{
+    font-size: 6.0rem;
+    font-family: $font-en;
+    text-align: center;
+    margin: 0px;
+    span{
+      display: block;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+}
+.content-width{
+  margin: 0 auto;
+  width: 100%;
+  max-width: $content-width;
+  @include media($middle){
+    padding: 0px 5%;
+  }
+}
+
+.top-title-h2{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 55px;
+  h2{
+    font-size: 6rem;
+    margin: 0px;
+    position: relative;
+    margin-right: 10px;
+    font-family: $font-en;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      background: #000;
+      width: 32px;
+      height: 4px;
+      left: -47px;
+      top:34px;
+    }
+  }
+  p{
+    font-size: 1.4rem;
+    margin: 0px;
+    font-weight: bold;
+  }
+}
+
+.com-btn{
+  a{
+    font-size: 1.8rem;
+    font-family: $font-en;
+    letter-spacing: 0.1em;
+    position: relative;
+    padding: 20px 0px;
+    line-height: 1;
+    display: inline-block;
+    &:hover{
+      &:after{
+        transform: translateX(10px);
+      }
+    }
+    &:after{
+      transition: all .3s ease;
+      content: '';
+      display: block;
+      position: absolute;
+      right: -71px;
+      top:0px;
+      width: 57px;
+      height: 57px;
+      background-image: url('./assets/img/icon/icon-arrow.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.com-btn--bg{
+  width: 267px;
+  margin: 0 auto;
+  a{
+    display: block;
+    text-align: center;
+    padding-right: 15px;
+    position: relative;
+    font-family: $font-en;
+    font-size: 1.4rem;
+    padding: 6px 0px;
+    background-color: $color-main;
+    &:before,&:after{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      width: 8px;
+      height: 1.5px;
+      position: absolute;
+      right: 25%;
+      background: #000;
+    }
+    &:before{
+      top: 18.5px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &:after{
+      top: 13px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.pagination{
+  margin-top: 40px;
+  a{
+    margin-right: 5px;
+    font-size: 1.6rem;
+  }
+  .page-numbers{
+    background-color: #dddddd;
+    padding: 10px 13px;
+    color: #000;
+  }
+  .current{
+    background-color: $color-main-3;
+    padding: 10px 13px;
+    color: #fff;
+    margin-right: 5px;
+  }
+  .next,.prev{
+    padding: 10px;
+  }
+}
+
+.clearfix{
+  @include clearfix;
+}
+
+.pc-br{
+  display: block;
+  @include media($mobile){
+    display: none;
+  }
+}
+.sp-br{
+  display: none;
+  @include media($mobile){
+    display: block;
+  }
+}
+.pc-block{
+  display: block;
+  @include media($mobile){
+    display: none;
+  }
+}
+
+button:focus:not(.focus-visible) {
+    outline: none !important;
+}
+button:focus{
+  outline: none !important;
+}
+
+div.wpcf7-response-output{
+  font-size: 1.6rem;
+}
+
+.breadcrumb{
+
+  background: #eeecec;
+  padding: 15px 0px;
+  margin-bottom: 55px;
+  @include media($mobile){
+    margin-bottom: 20px;
+    padding: 20px 0px;
+  }
+  &-list{
+    text-align: left;
+    display: block;
+    width: $content-width;
+    margin: 0 auto;
+    @include media($mobile){
+      width: 100%;
+      padding: 0px 10px;
+    }
+    li{
+      display: inline-block;
+      font-size: 1.8rem;
+      @include media($mobile){
+        line-height: 1.5;
+        font-size: 0px;
+      }
+      .home{
+        position: relative;
+        padding-left: 28px;
+        @include media($mobile){
+          padding-left: 22px;
+        }
+        &:before{
+          position: absolute;
+          left: 6px;
+          top: 3px;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 700;
+          content: '\f015';
+          font-size: 1.4rem;
+          color: $color-main-4;
+          @include media($mobile){
+            font-size: 10px;
+            top: -11px;
+          }
+        }
+        span{
+          font-size: 1.4rem;
+          color: #252525;
+          @include media($mobile){
+            font-size: 10px;
+          }
+        }
+      }
+      span{
+        font-size: 1.4rem;
+        color: #828282;
+        @include media($mobile){
+          font-size: 10px;
+        }
+      }
+      a{
+        padding-right: 40px;
+
+        position: relative;
+        &:after{
+          position: absolute;
+          top: 0.5rem;
+          content: '＞';
+          font-size: 1.2rem;
+          width: 7px;
+          height: 9px;
+          right: 18px;
+          color: #828282;
+          @include media($mobile){
+            width: 5px;
+            height: 7px;
+            top: -10px;
+            right: 12px;
+            font-size: 8px;
+          }
+        }
+
+        @include media($mobile){
+          padding-right: 25px;
+        }
+        span{
+          font-size: 1.4rem;
+          @include media($mobile){
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

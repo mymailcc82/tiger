@@ -1,0 +1,26 @@
+//コンテンツ幅
+$font-mincho:'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','メイリオ', Meiryo,sans-serif;
+$font-gothic:'游ゴシック体', 'Yu Gothic', 'YuGothic','Yu Gothic UI','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,sans-serif;
+$font-en:'Roboto Condensed', sans-serif;
+$content-width: 1000px;
+
+
+
+$color-main: #ffe100;
+$color-main-2: #2ea363;
+$color-main-3: #31ac6b;
+$color-main-4: #33b26f;
+
+
+//$large: new-breakpoint(min-width 1080px 12);
+$large: new-breakpoint(min-width 1080px 12);
+$middle: new-breakpoint(max-width 1179px 12);
+$middle-min: new-breakpoint(min-width 768px max-width 1079px 12);
+$md: new-breakpoint(min-width 768px 12);
+$mobile: new-breakpoint(max-width 767px 12);
+
+
+/*
+$font-gothic: noto-sans-cjk-jp, sans-serif;
+$font-gothic-en: jaf-domus-titling-web, sans-serif;
+*/

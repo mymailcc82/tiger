@@ -1,0 +1,27 @@
+.single{
+  margin-bottom: 50px;
+  time{
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .page-title-h2{
+    margin-bottom: 10px;
+  }
+
+  .single-desc{
+    @include media($mobile){
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 1.8;
+    }
+    span{
+      font-size: 1.6rem;
+    }
+    b{
+      font-size: 1.6rem;
+    }
+  }
+}

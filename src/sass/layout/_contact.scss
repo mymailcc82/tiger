@@ -1,0 +1,188 @@
+.contact{
+  &-desc{
+    margin-bottom: 50px;
+    p{
+      line-height: 1.6;
+      margin: 0px;
+    }
+  }
+
+  &-col-contact{
+    width: 460px;
+    margin: 0 auto 60px;
+    @include media($mobile){
+      width: 100%;
+    }
+    h2{
+      font-family: $font-gothic-sub;
+      font-size: 13px;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .contact-col-contact-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      .contact-col-contact-wrap-col{
+        width: calc(49% - 8px);
+        &:first-child{
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .contact-form{
+    dl{
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      margin-bottom: 40px;
+      dt,dd{
+        padding: 15px 10px;
+        border-bottom: 1px dotted #999;
+        &:nth-of-type(2n){
+          background-color: #f3f3f3;
+        }
+        &:last-of-type{
+          border-bottom: 0px;
+        }
+      }
+
+
+      dt{
+        width: 200px;
+        font-size: 1.4rem;
+        font-weight: normal;
+        border-right: 1px dotted #999;
+        @include media($mobile){
+          width: 100%;
+          &:last-of-type{
+            border-bottom: 1px dotted #999;
+          }
+        }
+        .imp{
+          display: inline-block;
+          font-size: 1.0rem;
+          background-color: $color-main-3;
+          color: #fff;
+          padding: 2px 6px;
+          margin-right: 5px;
+          position: relative;
+          top: -1px;
+        }
+      }
+      dd{
+        width: 498px;
+        .mb10{
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+        span{
+          width: 100%;
+          display: inline-block;
+          font-size: 1.4rem;
+        }
+        .shi-name{
+          width: auto;
+        }
+        .wpcf7-list-item-label{
+          width: auto;
+          margin-left: 5px;
+          vertical-align: sub;
+          font-size: 14px;
+          @include media($mobile){
+            font-size: 1.1rem;
+            display: inline-block;
+          }
+        }
+        .wpcf7-not-valid-tip{
+          font-size: 11px;
+        }
+        select:-moz-focusring {
+          color: transparent;
+          text-shadow: 0px 0px 0px #000000; /* カラーは調整して下さい */
+        }
+        .form-control{
+          width: auto;
+          display: inline-block;
+          vertical-align: baseline;
+          width: 100%;
+        }
+        input[type="text"]:focus {
+          outline: 0;
+        }
+        input[type=checkbox] {
+	         width:21px;
+	         height:21px;
+
+         }
+        .yourname-ue{
+          margin-right: 20px;
+        }
+        .yourname-ue,.yourname-shita{
+          width: 200px;
+          display: inline-block;
+          @include media($mobile){
+            width: 100px;
+          }
+        }
+        .yournamekana-ue{
+          margin-right: 20px;
+        }
+        .yournamekana-ue,.yournamekana-shita{
+          width: 200px;
+          display: inline-block;
+          @include media($mobile){
+            width: 100px;
+          }
+        }
+        .inquiry_mail,.inquiry_mail_confirm,.tel{
+          width: 250px;
+        }
+        .menu-todouhuken,.shitoson,.banchi{
+          width: 300px;
+          @include media($mobile){
+            width: 180px;
+          }
+        }
+      }
+    }
+    .wpcf7-list-item{
+      margin: 0px;
+      @include media($mobile){
+
+      }
+    }
+    &-btn{
+      text-align: center;
+      @include media($mobile){
+        margin-bottom: 50px;
+      }
+
+      .reset{
+        margin-right: 20px;
+        @include media($mobile){
+          margin-right: 10px;
+        }
+      }
+      input{
+        width: 150px;
+        font-weight: normal;
+        display: inline-block;
+        font-size: 1.6rem;
+        background-color: $color-main-3;
+        border: none;
+        text-align: center;
+        color: #fff;
+        padding: 0px;
+        height: 40px;
+        border-radius: 0px;
+        @include media($mobile){
+          width: 140px;
+        }
+      }
+    }
+  }
+}
