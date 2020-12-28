@@ -1,0 +1,203 @@
+.shop{
+  .page-mainvisual{
+    margin-bottom: 50px;
+  }
+  .sec01{
+    margin-bottom: 75px;
+    &-h2{
+      color: $color-main;
+      width: 640px;
+      margin: 0 auto;
+      background-color: #000;
+      text-align: center;
+      font-size: 2.4rem;
+      letter-spacing: 0.05em;
+      padding: 10px 0px;
+      position: relative;
+      margin-bottom: 50px;
+      @include media($mobile){
+        width: 100%;
+        max-width: 640px;
+        font-size: 2.2rem;
+      }
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 45px;
+        bottom: -19px;
+        background-image: url('./assets/img/shop/icon-shop.png');
+        width: 17px;
+        height: 19px;
+      }
+    }
+    h3{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-align: center;
+      @include media($mobile){
+        font-size: 1.9rem;
+      }
+      .red{
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #ff1800;
+        @include media($mobile){
+          font-size: 1.9rem;
+          line-height: 1.5;
+        }
+      }
+    }
+    p{
+      font-size: 2.0rem;
+      line-height: 2.1;
+      text-align: center;
+      margin: 0px;
+      @include media($mobile){
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .sec02{
+    background-color: #fff;
+    padding: 75px 0px 115px;
+    margin-bottom: 160px;
+    @include media($mobile){
+      margin-bottom: 100px;
+      padding: 75px 0px;
+    }
+    h2{
+      font-size: 4.0rem;
+      margin-bottom: 45px;
+      text-align: center;
+      @include media($mobile){
+        font-size: 3.0rem;
+      }
+    }
+    &-wrap{
+      display: flex;
+      margin-bottom: 70px;
+      flex-wrap: wrap;
+      &-item{
+        width: 320px;
+        margin-right: 20px;
+
+        @include media($large){
+          &:nth-child(3n){
+            margin-right: 0px;
+          }
+        }
+        @include media($mobile){
+          margin: 0 auto 20px;
+        }
+        &-img{
+          margin-bottom: 30px;
+        }
+        &-desc{
+          background-color: #000;
+          color: $color-main;
+          display: inline-block;
+          padding: 4px 8px;
+        }
+      }
+    }
+    &-img{
+      width: 800px;
+      margin: 0 auto;
+      @include media($mobile){
+        width: 100%;
+      }
+      &-list{
+
+      }
+      &-list-sum{
+        li{
+          margin-right: 10px;
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .sec03{
+    margin-bottom: 190px;
+    position: relative;
+    @include media($mobile){
+      background-color: #fff;
+      padding: 60px 0px;
+      margin-bottom: 80px;
+    }
+    &:before{
+      position: absolute;
+      left: 0px;
+      top: -60px;
+      z-index: -1;
+      content: '';
+      display: block;
+      width: calc(100vw - (100vw - 800px) / 2);
+      height: 450px;
+      background-color: #fff;
+      @include media($mobile){
+        width: 100%;
+        display: none;
+      }
+    }
+    &-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      &-img{
+        width: 50%;
+        @include media($mobile){
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      &-txt{
+        width: 50%;
+        padding-left: 70px;
+        @include media($mobile){
+          width: 100%;
+          padding-left: 0px;
+        }
+        h2{
+          font-size: 2.0rem;
+          line-height: 2.1;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          position: relative;
+          &:before{
+            content: '';
+            width: 18px;
+            height: 2px;
+            background: #ff1800;
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+          }
+          &:after{
+            content: '';
+            width: 60px;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            bottom:0px;
+            left: 18px;
+          }
+        }
+        p{
+          font-size: 1.6rem;
+          line-height: 1.875;
+          letter-spacing: 0rem;
+          @include media($mobile){
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -16,6 +16,7 @@ body{
     }
   }
 }
+
 .content-width{
   margin: 0 auto;
   width: 100%;
@@ -29,12 +30,18 @@ body{
   display: flex;
   align-items: baseline;
   margin-bottom: 55px;
+  @include media($mobile){
+    align-items: center;
+  }
   h2{
-    font-size: 6rem;
+    font-size: 5.5rem;
     margin: 0px;
     position: relative;
     margin-right: 10px;
     font-family: $font-en;
+    @include media($mobile){
+      padding-left: 20px;
+    }
     &:before{
       position: absolute;
       content: '';
@@ -44,9 +51,12 @@ body{
       height: 4px;
       left: -47px;
       top:34px;
+      @include media($mobile){
+        left: -20px;
+      }
     }
   }
-  p{
+  &-p{
     font-size: 1.4rem;
     margin: 0px;
     font-weight: bold;

@@ -1,13 +1,22 @@
 .top{
   .archive{
     margin-bottom: 150px;
+    @include media($mobile){
+      margin-bottom: 100px;
+    }
     .content-width{
       position: relative;
     }
     .com-btn{
       position: absolute;
       right: 71px;
-      top:25px;
+      @include media($large){
+        top:25px;
+      }
+      @include media($mobile){
+        bottom:-60px;
+        left: 20px;
+      }
     }
   }
 
@@ -17,13 +26,19 @@
       display: flex;
       align-items: center;
       @include media($mobile){
-        flex-wrap: wrap;
+        flex-wrap:wrap-reverse;
       }
       &-txt{
         padding: 120px 0px;
         padding-left: calc((100vw - 1000px) / 2);
         width: calc(667 * (100vw / 1200));
         background-color: #fff;
+        @include media($mobile){
+          width: 100%;
+          padding: 50px 0px;
+          padding-left: 20px;
+
+        }
         .top-title-h2{
           position: relative;
           margin-bottom: 30px;
@@ -35,6 +50,9 @@
             position: absolute;
             bottom:0px;
             left: 0px;
+            @include media($mobile){
+              left: 20px;
+            }
           }
           &:after{
             content: '';
@@ -44,13 +62,19 @@
             position: absolute;
             bottom:0px;
             left: 18px;
+            @include media($mobile){
+              left: 38px;
+            }
           }
         }
-        p{
+        &-desc{
           font-size: 2rem;
           font-weight: bold;
           line-height: 2.1;
           margin-bottom: 20px;
+          @include media($mobile){
+            font-size: 1.8rem;
+          }
         }
       }
       &-img{
@@ -59,8 +83,13 @@
         position: relative;
         z-index: 2;
         left: -90px;
+        @include media($mobile){
+          width: 100%;
+          left: 0px;
+        }
         img{
           width: 100%;
+          left: 0px;
         }
       }
     }
@@ -70,6 +99,9 @@
     background-color: #fff;
     padding: 95px 0px;
     margin-bottom: 95px;
+    @include media($mobile){
+      padding-bottom: 130px;
+    }
     .content-width{
       position: relative;
     }
@@ -84,6 +116,14 @@
         margin-right: 30.6px;
         &:nth-child(4n){
           margin-right: 0px;
+        }
+        @include media($mobile){
+          width: 49%;
+          margin-right: 2%;
+          margin-bottom: 20px;
+          &:nth-child(2n){
+            margin-right: 0px;
+          }
         }
         &-img{
           margin-bottom: 20px;
@@ -125,18 +165,35 @@
     .com-btn{
       position: absolute;
       right: 71px;
-      top:0px;
+
+      @include media($large){
+        top:0px;
+      }
+      @include media($mobile){
+        left: 30px;
+        bottom:-80px;
+      }
     }
   }
 
   .shop{
     margin-bottom: 95px;
+    @include media($mobile){
+      margin-bottom: 60px;
+    }
     &-wrap{
       display: flex;
+      @include media($mobile){
+        flex-wrap: wrap-reverse;
+      }
       &-txt{
         width: 40%;
         background-color: #fff;
         padding-top: 28px;
+        @include media($mobile){
+          width: 100%;
+          padding-bottom: 30px;
+        }
         p{
           text-align: center;
           font-size: 1.4rem;
@@ -151,6 +208,9 @@
       }
       &-img{
         width: 60%;
+        @include media($mobile){
+          width: 100%;
+        }
       }
     }
   }

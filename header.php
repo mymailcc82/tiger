@@ -11,6 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
 <link rel="shortcut icon" href="">
+<script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/jquery3.4.1.js"></script>
+<script>
+
+$(window).on('load', function () { // 読み込み完了したら実行する
+    $('#fadein').addClass("show");;// ローディングを隠す
+});
+
+</script>
 
 
 <!--[if lt IE 9]>
@@ -20,19 +28,23 @@
 </head>
 <body>
 
+
+
 <header class="header">
-  <div class="header-wrap">
+
     <?php if ( is_home() || is_front_page() ) : ?>
-      <h2 class="header-wrap-title">安心と安全をもっと。</h2>
-      <div class="header-wrap-logo">
-        <h1><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></h1>
-      </div>
-      <div class="header-wrap-scroll">
-        <span id="scroll"></span>
-      </div>
+      <div class="header-wrap">
+        <h2 class="header-wrap-title">安心と安全をもっと。</h2>
+        <div class="header-wrap-logo" id="fadein">
+          <h1><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></a></h1>
+        </div>
+        <div class="header-wrap-scroll">
+          <span id="scroll"></span>
+        </div>
     <?php else: ?>
+      <div class="header-wrap sub">
         <div class="header-wrap-sub-logo">
-          <h2><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></h2>
+          <h2><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></a></h2>
         </div>
     <?php endif; ?>
 
@@ -43,16 +55,24 @@
       <div class="drawer-content-wrap">
         <div class="drawer-content-wrap-content">
           <div class="drawer-content-img">
-            <h2><a href="<?php echo home_url();?>">MIRANAVI</a></h2>
+            <h2><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></a></h2>
           </div>
           <ul class="drawer-content-list">
-            <li><a href="<?php echo home_url();?>">TOP</a></li>
-            <li><a href="<?php echo home_url();?>/concept/">CONCEPT</a></li>
-            <li><a href="<?php echo home_url();?>/use/">HOW TO USE</a></li>
-            <li><a href="<?php echo home_url();?>/list/">3D LIST</a></li>
-            <li><a href="<?php echo home_url();?>/company/">COMPANY LIST</a></li>
-            <li><a href="<?php echo home_url();?>/privacy/">POLICY</a></li>
-            <li><a href="<?php echo home_url();?>/operation/">運営会社</a></li>
+            <li><a href="<?php echo home_url();?>">ホーム</a></li>
+            <li><a href="<?php echo home_url();?>/about/">タイガー安全について</a></li>
+            <li><a href="<?php echo home_url();?>/service/">サービス</a></li>
+            <li><a href="<?php echo home_url();?>/catalog/">電子カタログ</a></li>
+            <li><a href="<?php echo home_url();?>/shop/">タイガープロショップ</a></li>
+            <li><a href="<?php echo home_url();?>/category/news/">新着情報</a></li>
+            <li><a href="<?php echo home_url();?>/company/">会社概要</a></li>
+            <li><a href="<?php echo home_url();?>/recruit/">採用情報</a></li>
+            <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
+            <li><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
+          </ul>
+          <ul class="drawer-content-foot">
+            <li>〒747-0836 ⼭⼝県防府市植松301-4</li>
+            <li><a href="">0835-23-5592</a></li>
+            <li>受付時間：平⽇9:00〜10:00</li><li> 定休⽇：⼟⽇祝</li>
           </ul>
         </div>
       </div>

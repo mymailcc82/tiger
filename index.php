@@ -5,13 +5,26 @@
     <div class="content-width">
       <div class="top-title-h2">
         <h2>NEWS</h2>
-        <p>新着情報</p>
+        <p class="top-title-h2-p">新着情報</p>
       </div>
       <div class="com-btn">
-        <a href="">SHOW ALL</a>
+        <a href="<?php echo home_url();?>/category/blog">SHOW ALL</a>
       </div>
       <div class="archive-wrap">
-        <?php get_template_part('inc/inc-archive');?>
+        <?php $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 4,
+          //'cat' =>2
+        ); ?>
+        <?php $the_query = new WP_Query( $args ); ?>
+        <?php if ( $the_query->have_posts() ) : ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <?php get_template_part('inc/inc-archive');?>
+        <?php endwhile; ?>
+        <?php else : ?>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
+
       </div>
     </div>
   </section>
@@ -21,9 +34,9 @@
       <div class="sec02-wrap-txt">
         <div class="top-title-h2">
           <h2>ABOUT</h2>
-          <p>タイガー安全について</p>
+          <p class="top-title-h2-p">タイガー安全について</p>
         </div>
-        <p>
+        <p class="sec02-wrap-txt-desc">
           あらゆる「危険」に対応できるよう、<br>
           「安⼼・安全」をテーマに<br>
           当社では安全⽤品全般を<br>
@@ -42,7 +55,7 @@
     <div class="content-width">
       <div class="top-title-h2">
         <h2>SERVICE</h2>
-        <p>サービス</p>
+        <p class="top-title-h2-p">サービス</p>
       </div>
       <div class="com-btn">
         <a href="">READ MORE</a>

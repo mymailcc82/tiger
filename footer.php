@@ -21,16 +21,15 @@
     </div>
 
     <ul class="footer-wrap-list">
-      <li><a href="<?php echo home_url();?>">タイガー安全について</a></li>
-      <li><a href="<?php echo home_url();?>">サービス</a></li>
-      <li><a href="<?php echo home_url();?>">電子カタログ</a></li>
-      <li><a href="<?php echo home_url();?>">タイガーブロショップ</a></li>
-      <li><a href="<?php echo home_url();?>">新着情報</a></li>
-      <li><a href="<?php echo home_url();?>">会社概要</a></li>
-      <li><a href="<?php echo home_url();?>">採用情報</a></li>
-      <li><a href="<?php echo home_url();?>">お問い合わせ</a></li>
+      <li><a href="<?php echo home_url();?>/about/">タイガー安全について</a></li>
+      <li><a href="<?php echo home_url();?>/service/">サービス</a></li>
+      <li><a href="<?php echo home_url();?>/catalog/">電子カタログ</a></li>
+      <li><a href="<?php echo home_url();?>/shop/">タイガープロショップ</a></li>
+      <li><a href="<?php echo home_url();?>/category/news/">新着情報</a></li>
+      <li><a href="<?php echo home_url();?>/company/">会社概要</a></li>
+      <li><a href="<?php echo home_url();?>/recruit/">採用情報</a></li>
+      <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
       <li><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
-      <li><a href="<?php echo home_url();?>"></a></li>
     </ul>
     <ul class="footer-wrap-info">
       <li>〒747-0836 ⼭⼝県防府市植松301-4</li>
@@ -55,7 +54,8 @@
   </div>
 </footer>
 
-<script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/jquery3.4.1.js"></script>
+
+<script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/all.min.js"></script>
 
 </body>
 

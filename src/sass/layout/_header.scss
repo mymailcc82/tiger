@@ -6,6 +6,7 @@
     left: 0px;
     top: 0px;
   }
+
   &-wrap{
     margin-bottom: 95px;
     &-title{
@@ -18,6 +19,26 @@
     &-logo{
       width: 309px;
       margin: 0 auto 55px;
+      opacity: 0;
+
+
+      @include media($mobile){
+        width: 280px;
+      }
+    }
+    .show{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes fadein{
+      0%{
+        opacity: 0%;
+      }
+      100%{
+        opacity: 1;
+      }
     }
     &-scroll{
       $scroll-height:185px;
@@ -59,7 +80,12 @@
       padding-top: 20px;
     }
   }
-
+  .sub{
+    margin-bottom: 75px;
+    @include media($mobile){
+      margin-bottom: 40px;
+    }
+  }
 
   #drawer-checkbox{
     display: none;
@@ -84,6 +110,12 @@
       right: 50px;
       top: 50px;
     }
+    @include media($mobile){
+      right: 10px;
+      top: 10px;
+      width: 70px;
+      height: 67px;
+    }
   }
   #drawer-icon span {
     background:  #ffe100;
@@ -95,6 +127,12 @@
     transition: all 0.3s ease-in-out;
     height: 4px;
     z-index: 1000;
+    @include media($mobile){
+      width: 30px;
+      height: 2px;
+      left: 22px;
+      bottom: 18px;
+    }
 
   }
   #drawer-icon span::before{
@@ -111,6 +149,10 @@
     transition: all 0.3s ease-in-out;
     width: 38px;
     margin-top: -8px;
+    @include media($mobile){
+      width: 30px;
+      height: 2px;
+    }
 
   }
   #drawer-icon span::after {
@@ -126,6 +168,10 @@
     transition: all 0.3s ease-in-out;
     width: 38px;
     margin-top: 8px;
+    @include media($mobile){
+      width: 30px;
+      height: 2px;
+    }
 
   }
   #drawer-checkbox:checked ~ #drawer-icon span {
@@ -153,6 +199,9 @@
     position: absolute;
     top: 50%;
     width: 100%;
+    @include media($mobile){
+      left: 13px;
+    }
   }
   #drawer-checkbox:checked ~#drawer-icon{
     @include media(mobile){
@@ -176,31 +225,41 @@
     overflow: auto;
     position: fixed;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 60px;
+    right: 50px;
+    width: 0%;
     max-width: 100%;
-    height: 100%;
-    background: #fff;
-    transition: all 0.3s ease-in-out 0s;
-    transform: translateX(-100%);
+    height: 0%;
+    background: $color-main;
+    transition: all .6s ease-in-out;
+    transform: scale(0.1);
+    border-radius: 100%;
     z-index: 1000;
+    @include media($mobile){
+      top: 10px;
+    }
     .drawer-content-wrap{
       position: relative;
       height: 100vh;
+      padding: 40px 0px;
+      overflow: scroll;
       @include media(lg){
         min-height: 800px;
       }
       &-content{
-        position: absolute;
-        left: 50%;
-        top:50%;
-        -webkit-transform: translate(-50%,-50%);
-        -moz-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        -o-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        width: 80%;
+        @include media($large){
+          position: absolute;
+          left: 50%;
+          top:50%;
+          -webkit-transform: translate(-50%,-50%);
+          -moz-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          width: 80%;
+
+        }
+
       }
     }
     .drawer-content-img{
@@ -224,18 +283,69 @@
         margin-bottom: 15px;
         a{
           text-decoration: none;
-          color: #333;
+          color: #000;
           font-size: 18px;
+          font-weight: bold;
           @include media(md){
             font-size: 20px;
+          }
+          img{
+            width: 25px;
           }
         }
       }
     }
+    .drawer-content-foot{
+
+        text-align: center;
+        margin-bottom: 23px;
+        li{
+          display: inline-block;
+          font-size: 12px;
+          margin-bottom: 0px;
+          @include media($mobile){
+            display: block;
+          }
+          &:first-child{
+            display: block;
+            margin-bottom: 5px;
+          }
+          &:nth-child(2){
+            margin-right: 25px;
+          }
+          &:nth-child(3){
+            margin-right: 5px;
+          }
+          a{
+            font-size: 1.6rem;
+            font-family: $font-en;
+            position: relative;
+            padding-left: 15px;
+            &:before{
+              position: absolute;
+              content: '';
+              width: 13px;
+              height: 13px;
+              display: block;
+              left: 0px;
+              top:3px;
+              background-image: url('./assets/img/icon/icon-tel.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+    }
   }
   #drawer-checkbox:checked ~ #drawer-content {
-    transform: translateX(0);
+    //transform: translateX(0);
     box-shadow: 6px 0 25px rgba(0, 0, 0, 0.16);
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    top: 0px;
+    right: 0px;
 
   }
 
@@ -265,8 +375,17 @@
 @mixin transition {
     @for $i from 1 through 50 {
       &:nth-child(#{$i}) {
-        transition: transform 1.5s #{$i * .08}s cubic-bezier(.29,1.4,.44,.96);
+        transition: transform 2.5s #{$i * .08}s cubic-bezier(.29,1.4,.44,.96);
       }
+    }
+  }
+
+  @keyframes aniopa{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
     }
   }
 
@@ -274,16 +393,21 @@
   #drawer-checkbox:checked ~ #drawer-content{
     transform: translatex(0);
     li{
-      transform: translatex(0);
+      transform: translate(0);
       @include transition;
+      animation-name: aniopa;
+      animation-duration: 1.2s;
+      animation-fill-mode:forwards;
+      animation-timing-function: ease-in;
     }
   }
 
 
+
   #drawer-content li{
-    transform: translatex(100vw);
+    opacity: 0;
+    transform: translatey(20px);
         /* ie workaround */
-    -ms-transform: translatex(-100vw);
   }
 
 

@@ -1,0 +1,17 @@
+.company{
+  .sec01{
+    .page-table{
+      margin-bottom: 45px;
+    }
+  }
+  &-map{
+    width: 800px;
+    height: 533px;
+    margin: 0 auto 100px;
+    @include media($mobile){
+      width: 100%;
+      height: 350px;
+      margin-bottom: 50px;
+    }
+  }
+}

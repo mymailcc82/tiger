@@ -12,6 +12,9 @@
     line-height: 1.875;
     text-align: center;
     margin-bottom: 25px;
+    @include media($mobile){
+      font-size: 1.2rem;
+    }
   }
   &-wrap{
     width: 100%;
@@ -25,6 +28,10 @@
       display: block;
       padding: 65px 0px;
       position: relative;
+      @include media($mobile){
+        padding: 35px 0px;
+        padding-right: 10px;
+      }
       &:hover{
         &::after{
           transform: translateX(10px);
@@ -36,13 +43,21 @@
         width: 57px;
         height: 57px;
         right: 65px;
-        top:calc(50% - 28.5px);
-
         position: absolute;
         background-image: url('./assets/img/icon/icon-arrow.png');
         background-size: contain;
         background-repeat: no-repeat;
         transition: all .3s ease;
+        top:calc(50% - 28.5px);
+        @include media($large){
+
+        }
+        @include media($mobile){
+          right: 0px;
+          width: 30px;
+          top:calc(50% - 15px);
+          height: 30px;
+        }
       }
       h3{
         font-size: 3.5rem;
@@ -51,6 +66,9 @@
         position: relative;
         padding-bottom: 10px;
         margin-bottom: 8px;
+        @include media($mobile){
+          font-size: 2.0rem;
+        }
         &:before{
           content: '';
           width: 32px;
@@ -100,12 +118,24 @@
       margin-bottom: 30px;
       @include media($middle){
         flex-wrap: wrap;
+        width: 260px;
+        margin: 0 auto 20px;
       }
       li{
         display: inline-block;
         margin-right: 40px;
+        @include media($mobile){
+          display: block;
+          margin-right: 0px;
+          width: 50%;
+          margin-bottom: 10px;
+        }
         &:last-child{
           margin-right: 0px;
+          @include media($mobile){
+            width: 100%;
+            text-align: center;
+          }
         }
         a{
           font-size: 12px;
@@ -123,6 +153,9 @@
         display: inline-block;
         font-size: 12px;
         margin-bottom: 0px;
+        @include media($mobile){
+          display: block;
+        }
         &:first-child{
           display: block;
           margin-bottom: 5px;
@@ -166,6 +199,10 @@
     position: fixed;
     right: 0px;
     bottom: 45%;
+    z-index: 50;
+    @include media($mobile){
+      bottom: 10%;
+    }
     &-contact{
       a{
         display: block;

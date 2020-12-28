@@ -1,15 +1,23 @@
 .archive{
-
+  &-sec{
+    margin-bottom: 100px;
+  }
   &-wrap{
-
     display: flex;
     flex-wrap: wrap;
-
     &-item{
       width: 227px;
       margin-right: 30.6px;
       &:nth-child(4n){
         margin-right: 0px;
+      }
+      @include media($mobile){
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+        &:nth-child(2n){
+          margin-right: 0px;
+        }
       }
       &-img{
         width: 100%;

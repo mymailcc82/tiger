@@ -1,0 +1,96 @@
+.slick-dotted.slick-slider{
+  margin-bottom: 0px;
+}
+.slick-list{
+  font-size: 0px;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
+.slick-dots{
+  position: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0px;
+  li{
+    width: 152px;
+    margin: 0px;
+    margin-right: 10px;
+    height: auto;
+    &:nth-child(5n){
+      margin-right: 0px;
+    }
+    @include media($mobile){
+      width: 32%;
+      margin-right: 2%;
+      margin-bottom: 10px;
+      &:nth-child(3n){
+        margin-right: 0px;
+      }
+    }
+
+  }
+}
+
+.slick-prev{
+  width: 57px;
+  height: 57px;
+  left: -100px;
+  @include media($mobile){
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    z-index: 10;
+    top: 30%;
+  }
+  &:hover{
+    &:before{
+      transform: translateX(-10px);
+    }
+  }
+  &:before{
+    background-image: url('./assets/img/icon/icon-arrow-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+    display: block;
+    content: '';
+    transition: all .3s ease;
+    @include media($mobile){
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+.slick-next{
+  width: 57px;
+  height: 57px;
+  right: -100px;
+  @include media($mobile){
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    z-index: 10;
+    top: 30%;
+  }
+  &:hover{
+    &:before{
+      transform: translateX(10px);
+    }
+  }
+  &:before{
+    transition: all .3s ease;
+    background-image: url('./assets/img/icon/icon-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+    display: block;
+    content: '';
+    @include media($mobile){
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
