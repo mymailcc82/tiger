@@ -89,6 +89,13 @@
             margin-right: 0px;
           }
         }
+        @include media($middle-min){
+          width: 31%;
+          margin-right: 3%;
+          &:nth-child(3n){
+            margin-right: 0px;
+          }
+        }
         @include media($mobile){
           margin: 0 auto 20px;
         }
@@ -106,6 +113,9 @@
     &-img{
       width: 800px;
       margin: 0 auto;
+      @include media($middle-min){
+        width: 100%;
+      }
       @include media($mobile){
         width: 100%;
       }
@@ -141,6 +151,9 @@
       width: calc(100vw - (100vw - 800px) / 2);
       height: 450px;
       background-color: #fff;
+      @include media($middle-min){
+        width: 90%;
+      }
       @include media($mobile){
         width: 100%;
         display: none;
@@ -159,6 +172,9 @@
       &-txt{
         width: 50%;
         padding-left: 70px;
+        @include media($middle-min){
+          padding-left: 40px;
+        }
         @include media($mobile){
           width: 100%;
           padding-left: 0px;
@@ -169,6 +185,9 @@
           margin-bottom: 20px;
           padding-bottom: 10px;
           position: relative;
+          @include media($middle-min){
+            font-size: 1.9rem;
+          }
           &:before{
             content: '';
             width: 18px;
@@ -192,7 +211,7 @@
           font-size: 1.6rem;
           line-height: 1.875;
           letter-spacing: 0rem;
-          @include media($mobile){
+          @include media($middle){
             font-size: 1.5rem;
           }
         }

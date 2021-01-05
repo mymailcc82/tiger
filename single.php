@@ -30,7 +30,7 @@
       <?php else : ?>
       <?php endif; ?>
       <div class="single-btn">
-        <a href="<?php echo home_url();?>/category/blog/">新着情報一覧</a>
+        <a href="<?php echo home_url();?>/category/news/">新着情報一覧</a>
       </div>
     </div>
   </section>

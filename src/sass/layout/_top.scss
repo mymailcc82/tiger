@@ -13,6 +13,10 @@
       @include media($large){
         top:25px;
       }
+      @include media($middle-min){
+        top: 0px;
+        right: 100px;
+      }
       @include media($mobile){
         bottom:-60px;
         left: 20px;
@@ -33,6 +37,11 @@
         padding-left: calc((100vw - 1000px) / 2);
         width: calc(667 * (100vw / 1200));
         background-color: #fff;
+        @include media($middle-min){
+          padding:50px 0px;
+          padding-left: 4%;
+          width: 100%;
+        }
         @include media($mobile){
           width: 100%;
           padding: 50px 0px;
@@ -72,6 +81,9 @@
           font-weight: bold;
           line-height: 2.1;
           margin-bottom: 20px;
+          @include media($middle-min){
+            font-size: 1.8rem;
+          }
           @include media($mobile){
             font-size: 1.8rem;
           }
@@ -83,6 +95,10 @@
         position: relative;
         z-index: 2;
         left: -90px;
+        @include media($middle-min){
+          width: 90%;
+          left: -30px;
+        }
         @include media($mobile){
           width: 100%;
           left: 0px;
@@ -116,6 +132,10 @@
         margin-right: 30.6px;
         &:nth-child(4n){
           margin-right: 0px;
+        }
+        @include media($middle-min){
+          width: 22%;
+          margin-right: 4%;
         }
         @include media($mobile){
           width: 49%;
@@ -169,6 +189,10 @@
       @include media($large){
         top:0px;
       }
+      @include media($middle-min){
+        top: 0px;
+        right: 110px;
+      }
       @include media($mobile){
         left: 30px;
         bottom:-80px;
@@ -190,6 +214,9 @@
         width: 40%;
         background-color: #fff;
         padding-top: 28px;
+        @include media($middle-min){
+          padding-top: 15px;
+        }
         @include media($mobile){
           width: 100%;
           padding-bottom: 30px;
@@ -200,10 +227,16 @@
           line-height: 1.78;
           margin-bottom: 15px;
           font-weight: bold;
+          @include media($middle-min){
+            font-size: 1.3rem;
+          }
         }
         h2{
           width: 263px;
           margin: 0 auto 15px;
+          @include media($middle-min){
+            width: 150px;
+          }
         }
       }
       &-img{

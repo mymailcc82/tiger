@@ -1,14 +1,14 @@
 <?php get_header();?>
 
 <main class="top">
-  <section class="archive">
+  <section class="archive scroll-fade">
     <div class="content-width">
       <div class="top-title-h2">
         <h2>NEWS</h2>
         <p class="top-title-h2-p">新着情報</p>
       </div>
       <div class="com-btn">
-        <a href="<?php echo home_url();?>/category/blog">SHOW ALL</a>
+        <a href="<?php echo home_url();?>/category/news">SHOW ALL</a>
       </div>
       <div class="archive-wrap">
         <?php $args = array(
@@ -43,27 +43,27 @@
           多数取り扱っております。
         </p>
         <div class="com-btn">
-          <a href="">READ MORE</a>
+          <a href="<?php echo home_url();?>/about/">READ MORE</a>
         </div>
       </div>
-      <div class="sec02-wrap-img">
+      <div class="sec02-wrap-img scroll-fade">
         <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-sec02.jpg" alt="">
       </div>
     </div>
   </section>
-  <section class="sec03">
+  <section class="sec03 scroll-fade">
     <div class="content-width">
       <div class="top-title-h2">
         <h2>SERVICE</h2>
         <p class="top-title-h2-p">サービス</p>
       </div>
       <div class="com-btn">
-        <a href="">READ MORE</a>
+        <a href="<?php echo home_url();?>/service/">READ MORE</a>
       </div>
 
       <div class="sec03-wrap">
         <div class="sec03-wrap-item">
-          <a href="">
+          <a href="<?php echo home_url();?>/service/#service01">
           <div class="sec03-wrap-item-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/top/service-item-01.png" alt="">
           </div>
@@ -72,7 +72,7 @@
         </div>
 
         <div class="sec03-wrap-item">
-          <a href="">
+          <a href="<?php echo home_url();?>/service/#service02">
           <div class="sec03-wrap-item-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/top/service-item-02.png" alt="">
           </div>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="sec03-wrap-item">
-          <a href="">
+          <a href="<?php echo home_url();?>/service/#service03">
           <div class="sec03-wrap-item-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/top/service-item-03.png" alt="">
           </div>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="sec03-wrap-item">
-          <a href="">
+          <a href="<?php echo home_url();?>/service/#service04">
           <div class="sec03-wrap-item-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/top/service-item-04.png" alt="">
           </div>
@@ -101,7 +101,7 @@
     </div>
   </section>
 
-  <section class="shop">
+  <section class="shop scroll-fade">
     <div class="content-width">
       <div class="shop-wrap">
         <div class="shop-wrap-txt">
@@ -109,7 +109,7 @@
           <h2><img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop-title.png" alt="タイガープロショップ"></h2>
 
           <div class="com-btn--bg">
-            <a href="">READ MORE</a>
+            <a href="<?php echo home_url();?>/shop/">READ MORE</a>
           </div>
         </div>
         <div class="shop-wrap-img">

@@ -12,6 +12,10 @@
       &:nth-child(4n){
         margin-right: 0px;
       }
+      @include media($middle-min){
+        width: 23%;
+        margin-right: 2%;
+      }
       @include media($mobile){
         width: 48%;
         margin-right: 4%;
@@ -24,6 +28,9 @@
         padding: 20px 50px;
         background-color: #fff;
         margin-bottom: 25px;
+        @include media($middle-min){
+          padding: 20px 30px;
+        }
         @include media($mobile){
           padding: 20px 20px;
           margin-bottom: 15px;

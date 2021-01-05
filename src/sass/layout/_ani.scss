@@ -1,0 +1,15 @@
+
+.scroll-fade-origin {
+  opacity : 0;
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+.scroll-fade {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+#fadein{
+  opacity: 0;
+}

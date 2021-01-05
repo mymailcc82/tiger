@@ -8,7 +8,7 @@ Template Name:  about
   <div class="com-page-title">
     <h1>ABOUT<span>タイガー安全について</span></h1>
   </div>
-  <div class="page-mainvisual">
+  <div class="page-mainvisual scroll-fade">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-main.jpg" alt="">
   </div>
   <section class="sec01">
@@ -44,10 +44,10 @@ Template Name:  about
             安全⽤品だけでなく、⼀般家庭にも必要とされる防災グッズ・保存⾷など多数取り揃えておりますので、どうぞお気軽にお⽴ち寄りください。
           </p>
           <div class="com-btn">
-            <a href="">READ MORE</a>
+            <a href="<?php echo home_url();?>/shop/">READ MORE</a>
           </div>
         </div>
-        <div class="sec02-wrap-img">
+        <div class="sec02-wrap-img scroll-fade">
           <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-sec02.jpg" alt="">
         </div>
       </div>

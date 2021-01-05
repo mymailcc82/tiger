@@ -1,3 +1,4 @@
+
 .header{
   position: relative;
   &-icon{
@@ -9,19 +10,30 @@
 
   &-wrap{
     margin-bottom: 95px;
+    height: 100vh;
+    position: relative;
+    min-height: 768px;
+    @include media($mobile){
+      min-height: 667px;
+    }
+    &-center{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
     &-title{
       font-size: 3rem;
       display: block;
       text-align: center;
       margin-bottom: 45px;
-      padding-top: 90px;
+      @include media($mobile){
+        font-size: 2.6rem;
+      }
     }
     &-logo{
       width: 309px;
       margin: 0 auto 55px;
-      opacity: 0;
-
-
       @include media($mobile){
         width: 280px;
       }
@@ -42,13 +54,24 @@
     }
     &-scroll{
       $scroll-height:185px;
+      $scroll-height-middle:125px;
       height: $scroll-height;
       overflow: hidden;
+      position: absolute;
+      bottom: 0px;
+      left: calc(50% - 1px);
+
+      @include media($middle){
+        height: $scroll-height-middle;
+      }
 
       #scroll{
   			background-color: #ccc;
   			height: $scroll-height;
-  			overflow: hidden
+  			overflow: hidden;
+        @include media($middle){
+          height: $scroll-height-middle;
+        }
 		  }
 
   		#scroll:after{
@@ -67,10 +90,16 @@
   			50%{
   				height: $scroll-height;
   				margin-top: 0;
+          @include media($middle){
+            height: $scroll-height-middle;
+          }
   			}
   			100%{
   				margin-top: $scroll-height;
   				height: $scroll-height;
+          @include media($middle){
+            height: $scroll-height-middle;
+          }
   			}
   		}
     }
@@ -130,7 +159,7 @@
     @include media($mobile){
       width: 30px;
       height: 2px;
-      left: 22px;
+      left: 21px;
       bottom: 18px;
     }
 
@@ -200,7 +229,7 @@
     top: 50%;
     width: 100%;
     @include media($mobile){
-      left: 13px;
+      left: 12px;
     }
   }
   #drawer-checkbox:checked ~#drawer-icon{
@@ -241,10 +270,13 @@
     .drawer-content-wrap{
       position: relative;
       height: 100vh;
-      padding: 40px 0px;
+      padding: 40px 0px 60px;
       overflow: scroll;
-      @include media(lg){
+      overflow-x: hidden;
+      overflow-y: hidden;
+      @include media($large){
         min-height: 800px;
+        padding: 40px 0px;
       }
       &-content{
         @include media($large){
@@ -257,14 +289,25 @@
           -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
           width: 80%;
-
+        }
+        @include media($middle-min){
+          position: absolute;
+          left: 50%;
+          top:50%;
+          -webkit-transform: translate(-50%,-50%);
+          -moz-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          width: 80%;
         }
 
       }
     }
     .drawer-content-img{
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
+
       img{
         width: 130px;
       }
@@ -280,15 +323,12 @@
     .drawer-content-list{
       li{
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         a{
           text-decoration: none;
           color: #000;
-          font-size: 18px;
+          font-size: 15px;
           font-weight: bold;
-          @include media(md){
-            font-size: 20px;
-          }
           img{
             width: 25px;
           }

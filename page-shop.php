@@ -8,7 +8,7 @@ Template Name:  shop
   <div class="com-page-title">
     <h1>TIGER PRO SHOP<span>タイガープロショップ</span></h1>
   </div>
-  <div class="page-mainvisual">
+  <div class="page-mainvisual scroll-fade">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/shop-main.jpg" alt="">
   </div>
   <section class="sec01">
@@ -60,7 +60,7 @@ Template Name:  shop
   <section class="sec03">
     <div class="content-width">
       <div class="sec03-wrap">
-        <div class="sec03-wrap-img">
+        <div class="sec03-wrap-img scroll-fade">
           <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/sec03-img.jpg" alt="">
         </div>
         <div class="sec03-wrap-txt">

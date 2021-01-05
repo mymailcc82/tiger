@@ -9,8 +9,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
-<link rel="shortcut icon" href="">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.0.6">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/assets/img/com/favicon.png">
+<meta property="og:image" content="<?php echo get_template_directory_uri();?>/assets/img/com/ogp.png" />
+
+
+
+
 <script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/jquery3.4.1.js"></script>
 <script>
 
@@ -19,6 +24,7 @@ $(window).on('load', function () { // 読み込み完了したら実行する
 });
 
 </script>
+
 
 
 <!--[if lt IE 9]>
@@ -34,10 +40,13 @@ $(window).on('load', function () { // 読み込み完了したら実行する
 
     <?php if ( is_home() || is_front_page() ) : ?>
       <div class="header-wrap">
-        <h2 class="header-wrap-title">安心と安全をもっと。</h2>
-        <div class="header-wrap-logo" id="fadein">
-          <h1><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></a></h1>
+        <div class="header-wrap-center" id="fadein">
+          <h2 class="header-wrap-title">安心と安全をもっと。</h2>
+          <div class="header-wrap-logo">
+            <h1><img src="<?php echo get_template_directory_uri();?>/assets/img/header/top-logo.png" alt="タイガー安全"></h1>
+          </div>
         </div>
+
         <div class="header-wrap-scroll">
           <span id="scroll"></span>
         </div>
@@ -61,17 +70,17 @@ $(window).on('load', function () { // 読み込み完了したら実行する
             <li><a href="<?php echo home_url();?>">ホーム</a></li>
             <li><a href="<?php echo home_url();?>/about/">タイガー安全について</a></li>
             <li><a href="<?php echo home_url();?>/service/">サービス</a></li>
-            <li><a href="<?php echo home_url();?>/catalog/">電子カタログ</a></li>
+            <li><a href="<?php echo home_url();?>/catarog/">電子カタログ</a></li>
             <li><a href="<?php echo home_url();?>/shop/">タイガープロショップ</a></li>
             <li><a href="<?php echo home_url();?>/category/news/">新着情報</a></li>
             <li><a href="<?php echo home_url();?>/company/">会社概要</a></li>
             <li><a href="<?php echo home_url();?>/recruit/">採用情報</a></li>
             <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
-            <li><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
+            <li><a href="https://www.instagram.com/tigeranzen/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
           </ul>
           <ul class="drawer-content-foot">
             <li>〒747-0836 ⼭⼝県防府市植松301-4</li>
-            <li><a href="">0835-23-5592</a></li>
+            <li><a href="tel:0835-23-5592">0835-23-5592</a></li>
             <li>受付時間：平⽇9:00〜10:00</li><li> 定休⽇：⼟⽇祝</li>
           </ul>
         </div>

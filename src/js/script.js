@@ -5,7 +5,7 @@ $(function(){
     dots: true,
     infinite: true,
     centerMode: true,
-    speed: 3000,
+    speed: 2000,
     pauseOnDotsHover: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -25,9 +25,25 @@ $(function(){
       {
        breakpoint: 767,
        settings: {
-         
+
        }
      }
    ]
   });
+});
+
+$(function(){
+    $(window).scroll(function (){
+        $('.scroll-fade').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+              //$(this).find('.mask_inner').addClass('start');
+              //$(this).addClass('start');
+              $(this).css('opacity','1');
+              $(this).css('transform','translateY(0)');
+            }
+        });
+    });
 });

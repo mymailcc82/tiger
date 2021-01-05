@@ -14,11 +14,11 @@ $color-main-4: #33b26f;
 
 //$large: new-breakpoint(min-width 1080px 12);
 $large: new-breakpoint(min-width 1080px 12);
-$middle: new-breakpoint(max-width 1179px 12);
+$middle: new-breakpoint(max-width 1079px 12);
 $middle-min: new-breakpoint(min-width 768px max-width 1079px 12);
 $md: new-breakpoint(min-width 768px 12);
 $mobile: new-breakpoint(max-width 767px 12);
-
+$mobile-max: new-breakpoint(max-width 370px 12);
 
 /*
 $font-gothic: noto-sans-cjk-jp, sans-serif;

@@ -8,6 +8,9 @@
     width: 800px;
     height: 533px;
     margin: 0 auto 100px;
+    @include media($middle-min){
+      width: 100%;
+    }
     @include media($mobile){
       width: 100%;
       height: 350px;

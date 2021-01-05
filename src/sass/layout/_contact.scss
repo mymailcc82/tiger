@@ -19,6 +19,9 @@
       position: relative;
       top: -3px;
       margin-right: 5px;
+      @media all and (-ms-high-contrast: none) {
+        padding-left: 0px;
+      }
     }
     .check{
       .checkbox-223{
@@ -135,6 +138,28 @@
         max-width: 360px;
       }
 
+    }
+  }
+  .wpcf7-response-output{
+    p{
+      background-color: #000;
+      color: $color-main;
+      padding: 10px 0px;
+      text-align: center;
+      margin: 20px 0px;
+    }
+
+  }
+  .wpcf7-not-valid-tip{
+    color: #ff1800;
+  }
+  .wpcf7-response-output{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .screen-reader-response{
+    p,li{
+      font-weight: bold;
     }
   }
 }

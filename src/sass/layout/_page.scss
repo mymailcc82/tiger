@@ -21,6 +21,9 @@
     dt{
       width: 340px;
       border-bottom: 1px solid #ff1800;
+      @include media($middle-min){
+        width: 34%;
+      }
       @include media($mobile){
         width: 30%;
         font-size: 1.5rem;
@@ -29,6 +32,9 @@
     dd{
       width: 660px;
       border-bottom: 1px solid #000;
+      @include media($middle-min){
+        width: 66%;
+      }
       @include media($mobile){
         width: 70%;
       }

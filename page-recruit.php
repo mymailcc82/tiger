@@ -8,7 +8,7 @@ Template Name:  recruit
   <div class="com-page-title">
     <h1>RECRUIT<span>採用情報</span></h1>
   </div>
-  <div class="page-mainvisual">
+  <div class="page-mainvisual scroll-fade">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/recruit/recruit-main.jpg" alt="">
   </div>
 
@@ -86,7 +86,7 @@ Template Name:  recruit
         </dd>
       </dl>
       <div class="recruit-btn">
-        <a href="">ご応募はこちら</a>
+        <a href="<?php echo home_url();?>/contact/">ご応募はこちら</a>
       </div>
     </div>
   </section>

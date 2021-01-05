@@ -49,8 +49,8 @@
         background-repeat: no-repeat;
         transition: all .3s ease;
         top:calc(50% - 28.5px);
-        @include media($large){
-
+        @include media($middle-min){
+          right: 40px;
         }
         @include media($mobile){
           right: 0px;
@@ -118,21 +118,24 @@
       margin-bottom: 30px;
       @include media($middle){
         flex-wrap: wrap;
-        width: 260px;
+        width: 280px;
         margin: 0 auto 20px;
       }
       li{
         display: inline-block;
         margin-right: 40px;
-        @include media($mobile){
+        @include media($middle){
           display: block;
           margin-right: 0px;
           width: 50%;
           margin-bottom: 10px;
+          &:nth-child(2n){
+            padding-left: 10px;
+          }
         }
         &:last-child{
           margin-right: 0px;
-          @include media($mobile){
+          @include media($middle){
             width: 100%;
             text-align: center;
           }

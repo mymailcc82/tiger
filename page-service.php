@@ -8,7 +8,7 @@ Template Name:  service
   <div class="com-page-title">
     <h1>SERVICE<span>サービス</span></h1>
   </div>
-  <section class="sec01">
+  <section class="sec01" id="service01">
     <div class="content-width">
       <div class="service-wrap">
         <div class="service-wrap-img">
@@ -48,7 +48,7 @@ Template Name:  service
     </div>
   </section>
 
-  <section class="sec02">
+  <section class="sec02" id="service02">
     <div class="content-width">
       <div class="service-wrap-right">
         <div class="service-wrap-right-txt">
@@ -84,7 +84,7 @@ Template Name:  service
     </div>
   </section>
 
-  <section class="sec03">
+  <section class="sec03" id="service03">
     <div class="content-width">
       <div class="service-wrap">
         <div class="service-wrap-img">
@@ -117,7 +117,7 @@ Template Name:  service
     </div>
   </section>
 
-  <section class="sec04">
+  <section class="sec04" id="service04">
     <div class="content-width">
       <div class="service-wrap-right">
         <div class="service-wrap-right-txt">
@@ -128,7 +128,7 @@ Template Name:  service
             また、夏の暑い⽇や冬の寒い日など様々な環境の中で、お客様の安全を守る、熱中症対策グッズや防寒グッズも取り揃えております。
           </p>
           <div class="service-btn">
-            <a href="">タイガープロショップ</a>
+            <a href="<?php echo home_url();?>/shop/">タイガープロショップ</a>
           </div>
         </div>
 

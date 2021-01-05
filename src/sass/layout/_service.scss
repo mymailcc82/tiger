@@ -29,6 +29,10 @@
       position: relative;
       padding-right: 8%;
       z-index: 10;
+      @include media($middle-min){
+        width: 350px;
+        padding-right: 50px;
+      }
       @include media($mobile){
         width: 100%;
         padding-right: 4%;
@@ -45,6 +49,13 @@
         border-left: 170px solid transparent;
         transform: rotate(-45deg);
         z-index: -1;
+        @include media($middle-min){
+          top: 110px;
+          left: 160px;
+          border-top: 120px solid #fff;
+          border-right: 120px solid transparent;
+          border-left: 120px solid transparent;
+        }
         @include media($mobile){
           right: -63px;
           bottom: -29px;
@@ -56,6 +67,9 @@
     }
     &-txt{
       width: 41%;
+      @include media($middle-min){
+        width: calc(100% - 350px);
+      }
       @include media($mobile){
         width: 100%;
       }
@@ -70,7 +84,10 @@
       p{
         font-size: 1.6rem;
         letter-spacing: 0rem;
-        line-height: 1.78
+        line-height: 1.78;
+        @include media($middle-min){
+          font-size: calc(16 * (100vw / 1080));
+        }
       }
     }
   }
@@ -88,6 +105,10 @@
       padding-left: 8%;
       z-index: 10;
       padding-top: 20px;
+      @include media($middle-min){
+        width: 350px;
+        padding-left: 50px;
+      }
       @include media($mobile){
         width: 100%;
         padding-left: 4%;
@@ -105,6 +126,13 @@
         border-left: 170px solid transparent;
         transform: rotate(135deg);
         z-index: -1;
+        @include media($middle-min){
+          top: -15px;
+          left: -45px;
+          border-top: 120px solid #fff;
+          border-right: 120px solid transparent;
+          border-left: 120px solid transparent;
+        }
         @include media($mobile){
           left: -65px;
           top: -29px;
@@ -116,6 +144,9 @@
     }
     &-txt{
       width: 41%;
+      @include media($middle-min){
+        width: calc(100% - 350px);
+      }
       @include media($mobile){
         width: 100%;
       }
@@ -132,6 +163,9 @@
         letter-spacing: 0rem;
         line-height: 1.78;
         margin-bottom: 0px;
+        @include media($middle-min){
+          font-size: calc(16 * (100vw / 1080));
+        }
       }
       .service-btn{
         margin-top: 45px;
@@ -209,15 +243,17 @@
       font-size: 1.2rem;
       border-radius: 5px;
       font-weight: bold;
+      @include media($large){
+        &:nth-child(6n){
+          margin-right: 0px;
+        }
+      }
       @include media($mobile){
         width: 48%;
         margin-right: 4%;
         &:nth-child(2n){
           margin-right: 0px;
         }
-      }
-      &:nth-child(6n){
-        margin-right: 0px;
       }
     }
   }
@@ -231,12 +267,23 @@
       &:nth-child(4n){
         margin-right: 0px;
       }
+
+      @include media($middle-min){
+        width: 22%;
+        margin-right: 2%;
+        &:nth-child(4n){
+          margin-right: 0px;
+        }
+      }
       @include media($mobile){
         width: 48%;
         margin-right: 4%;
         margin-bottom: 15px;
         &:nth-child(2n){
           margin-right: 0px;
+        }
+        img{
+          width: 100%;
         }
       }
     }

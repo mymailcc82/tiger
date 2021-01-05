@@ -7,8 +7,23 @@
   <section class="archive-sec">
     <div class="content-width">
       <div class="archive-wrap">
-        <?php get_template_part('inc/inc-archive');?>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <?php get_template_part('inc/inc-archive');?>
+        <?php endwhile; ?>
+        <?php else : ?>
+        <?php endif; ?>
       </div>
+
+      <div class="pagination">
+        <?php $args = array(
+          'prev_next'          => true,
+          'prev_text'          => '＜',
+          'next_text'          => '＞',
+          'mid_size' =>5,
+        ); ?>
+        <?php echo paginate_links($args); ?>
+      </div>
+      <?php wp_reset_postdata(); ?>
     </div>
   </section>
 

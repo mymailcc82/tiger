@@ -5,6 +5,9 @@
   font-size: 0px;
   line-height: 0;
   margin-bottom: 10px;
+  img{
+    width: 100%;
+  }
 }
 
 .slick-dots{
@@ -19,6 +22,10 @@
     height: auto;
     &:nth-child(5n){
       margin-right: 0px;
+    }
+    @include media($middle-min){
+      width: 18%;
+      margin-right: 2.5%;
     }
     @include media($mobile){
       width: 32%;
@@ -36,6 +43,10 @@
   width: 57px;
   height: 57px;
   left: -100px;
+  @include media($middle-min){
+    left: 20px;
+    z-index: 10;
+  }
   @include media($mobile){
     width: 35px;
     height: 35px;
@@ -67,6 +78,10 @@
   width: 57px;
   height: 57px;
   right: -100px;
+  @include media($middle-min){
+    right: 20px;
+    z-index: 10;
+  }
   @include media($mobile){
     width: 35px;
     height: 35px;

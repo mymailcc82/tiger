@@ -90,7 +90,7 @@ select {
 [type="file"],
 select {
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline:0;
+    //outline-offset: $focus-outline-offset;
   }
 }
