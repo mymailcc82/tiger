@@ -8,7 +8,7 @@ Template Name:  about
   <div class="com-page-title">
     <h1>ABOUT<span>タイガー安全について</span></h1>
   </div>
-  <div class="page-mainvisual scroll-fade">
+  <div class="page-mainvisual">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-main.jpg" alt="">
   </div>
   <section class="sec01">
@@ -40,7 +40,7 @@ Template Name:  about
         <div class="sec02-wrap-txt">
           <h2>タイガープロショップについて</h2>
           <p>
-            2020年◯⽉、タイガー安全は新しく「タイガープロショップ」をオープンしました。<br>
+            2021年2⽉、タイガー安全は新しく「タイガープロショップ」をオープンしました。<br>
             安全⽤品だけでなく、⼀般家庭にも必要とされる防災グッズ・保存⾷など多数取り揃えておりますので、どうぞお気軽にお⽴ち寄りください。
           </p>
           <div class="com-btn">

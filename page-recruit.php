@@ -8,7 +8,7 @@ Template Name:  recruit
   <div class="com-page-title">
     <h1>RECRUIT<span>採用情報</span></h1>
   </div>
-  <div class="page-mainvisual scroll-fade">
+  <div class="page-mainvisual">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/recruit/recruit-main.jpg" alt="">
   </div>
 
@@ -63,7 +63,7 @@ Template Name:  recruit
           <div class="page-table-wrap">
             <h3>営業（法⼈）</h3>
             <p>
-              建設会社、⼯場、官公庁等へ⼯事現場で使う材料や商品の安全性についてアプローチしていただきます。
+              建設会社、⼯場、官公庁等へ⼯事現場で使う材料や商品の安全性についてアプローチしていただきます。<br>
               現場監督さんや作業員さんと⼈間関係を築き、お客様が最も必要とする商品を提案し販売する仕事です。 建設会社、⼯場、官公庁等へ⼯事現場で使う材料や商品の安全性についてアプローチしていただきます。
             </p>
           </div>

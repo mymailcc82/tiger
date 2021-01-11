@@ -8,7 +8,7 @@ Template Name:  company
   <div class="com-page-title">
     <h1>COMPANY<span>会社概要</span></h1>
   </div>
-  <div class="page-mainvisual scroll-fade">
+  <div class="page-mainvisual">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/company/company-main.jpg" alt="">
   </div>
 

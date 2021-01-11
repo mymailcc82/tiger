@@ -8,7 +8,7 @@ Template Name:  shop
   <div class="com-page-title">
     <h1>TIGER PRO SHOP<span>タイガープロショップ</span></h1>
   </div>
-  <div class="page-mainvisual scroll-fade">
+  <div class="page-mainvisual">
     <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/shop-main.jpg" alt="">
   </div>
   <section class="sec01">
