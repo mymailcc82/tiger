@@ -7,15 +7,17 @@
     left: 0px;
     top: 0px;
   }
-
-  &-wrap{
-    margin-bottom: 95px;
+  &-wrap-top{
     height: 100vh;
     position: relative;
     min-height: 768px;
     @include media($mobile){
       min-height: 667px;
     }
+  }
+  &-wrap{
+    margin-bottom: 95px;
+    
     &-center{
       position: absolute;
       left: 50%;

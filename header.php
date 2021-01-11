@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.0.6">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.0.7">
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/assets/img/com/favicon.png">
 <meta property="og:image" content="<?php echo get_template_directory_uri();?>/assets/img/com/ogp.png" />
 
@@ -39,7 +39,7 @@ $(window).on('load', function () { // 読み込み完了したら実行する
 <header class="header">
 
     <?php if ( is_home() || is_front_page() ) : ?>
-      <div class="header-wrap">
+      <div class="header-wrap header-wrap-top">
         <div class="header-wrap-center" id="fadein">
           <h2 class="header-wrap-title">安心と安全をもっと。</h2>
           <div class="header-wrap-logo">

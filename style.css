@@ -10042,17 +10042,20 @@ div.wpcf7-response-output {
   top: 0px;
 }
 
-.header-wrap {
-  margin-bottom: 95px;
+.header-wrap-top {
   height: 100vh;
   position: relative;
   min-height: 768px;
 }
 
 @media screen and (max-width: 767px) {
-  .header-wrap {
+  .header-wrap-top {
     min-height: 667px;
   }
+}
+
+.header-wrap {
+  margin-bottom: 95px;
 }
 
 .header-wrap-center {
