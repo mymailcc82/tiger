@@ -10,7 +10,13 @@
         <?php $cats = get_the_category(); ?>
         <div class="single-sec-info">
           <?php foreach($cats as $cat): ?>
-          <a href="<?php echo get_category_link($cat->cat_ID);?>">NEWS</a>
+          <a href="<?php echo get_category_link($cat->cat_ID);?>">
+            <?php if ($cat->cat_name == '新着情報'): ?>
+              NEWS
+            <?php else: ?>
+              <?php echo $cat->cat_name; ?>
+            <?php endif; ?>
+          </a>
           <?php endforeach; ?>
           <time><?php the_time('Y.m.d'); ?></time>
           <h2><?php the_title(); ?></h2>

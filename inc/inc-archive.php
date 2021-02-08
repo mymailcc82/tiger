@@ -1,3 +1,4 @@
+
 <div class="archive-wrap-item">
   <div class="archive-wrap-item-img">
     <a href="<?php the_permalink(); ?>">
@@ -12,7 +13,13 @@
     <?php $cats = get_the_category(); ?>
     <?php foreach($cats as $cat): ?>
       <li>
-        <a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php echo $cat->cat_name; ?></a>
+        <a href="<?php echo get_category_link($cat->cat_ID); ?>">
+          <?php if ($cat->cat_name == '新着情報'): ?>
+            NEWS
+          <?php else: ?>
+            <?php echo $cat->cat_name; ?>
+          <?php endif; ?>
+        </a>
       </li>
     <?php endforeach; ?>
 

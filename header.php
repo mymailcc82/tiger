@@ -2,20 +2,13 @@
 <html lang="ja">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
 <meta charset="utf-8">
-<meta name="description" content="">
-<meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.0.7">
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/assets/img/com/favicon.png">
-<meta property="og:image" content="<?php echo get_template_directory_uri();?>/assets/img/com/ogp.png" />
-
-
-
-
+<?php wp_head();?>
 <script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/jquery3.4.1.js"></script>
 <script>
 
