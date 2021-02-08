@@ -76,8 +76,6 @@
       max-width: 360px;
     }
     &:hover{
-      background-color: #000;
-      color: $color-main;
       opacity: 1;
       &:before,&:after{
         right: 20px;
