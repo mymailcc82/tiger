@@ -12,7 +12,7 @@ Template Name:  service
     <div class="content-width">
       <div class="service-wrap">
         <div class="service-wrap-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-01.jpg?ver=2.0.0" alt="">
         </div>
         <div class="service-wrap-txt">
           <h2>安全保安⽤品 販売・リース</h2>
@@ -40,10 +40,10 @@ Template Name:  service
         <li>その他</li>
       </ul>
       <ul class="service-list-img">
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-05.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-06.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-07.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-08.jpg" alt=""></li>
       </ul>
     </div>
   </section>
@@ -61,7 +61,7 @@ Template Name:  service
         </div>
 
         <div class="service-wrap-right-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-02.jpg" alt="">
         </div>
 
       </div>
@@ -76,10 +76,10 @@ Template Name:  service
 
       </ul>
       <ul class="service-list-img">
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-05.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-06.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-07.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-08.jpg" alt=""></li>
       </ul>
     </div>
   </section>
@@ -88,12 +88,12 @@ Template Name:  service
     <div class="content-width">
       <div class="service-wrap">
         <div class="service-wrap-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-03.jpg" alt="">
         </div>
         <div class="service-wrap-txt">
           <h2>⼟⽊建築⽤品販売</h2>
           <p>
-            ⼟⽊⼯事に必要な、グレーチングやシート、セメント、鉄筋など、幅広く取り揃えております。<br>
+            ⼟⽊建築に必要な、グレーチングやシート、セメント、鉄筋など、幅広く取り揃えております。<br>
             状況に合わせた安全性と景観、コストを考えた資材を提供しております。
           </p>
         </div>
@@ -109,10 +109,10 @@ Template Name:  service
         <li>その他</li>
       </ul>
       <ul class="service-list-img">
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-09.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-10.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-11.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-12.jpg" alt=""></li>
       </ul>
     </div>
   </section>
@@ -133,7 +133,7 @@ Template Name:  service
         </div>
 
         <div class="service-wrap-right-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-04.jpg" alt="">
         </div>
 
       </div>
@@ -146,12 +146,6 @@ Template Name:  service
         <li>マグネット</li>
         <li>その他</li>
 
-      </ul>
-      <ul class="service-list-img">
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
       </ul>
     </div>
   </section>

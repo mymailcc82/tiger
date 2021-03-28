@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="sec02-wrap-img scroll-fade">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-sec02.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-sec02.jpg?ver=2.0.0" alt="">
       </div>
     </div>
   </section>
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="shop-wrap-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop.jpg?ver=2.0.0" alt="">
         </div>
 
       </div>

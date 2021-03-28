@@ -9,7 +9,7 @@ Template Name:  recruit
     <h1>RECRUIT<span>採用情報</span></h1>
   </div>
   <div class="page-mainvisual">
-    <img src="<?php echo get_template_directory_uri();?>/assets/img/recruit/recruit-main.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/recruit/recruit-main.jpg?ver=2.0.0" alt="">
   </div>
 
   <section class="sec01">
@@ -81,6 +81,14 @@ Template Name:  recruit
             <p>
               お客様と弊社の架け橋になっていただいくお仕事です。<br>
               来客時やお電話での対応、営業や企画のアシスタント業を⾏い、弊社の顔となる重要なポジションです。
+            </p>
+          </div>
+
+          <div class="page-table-wrap">
+            <h3>ショップ店員「タイガープロショップ」</h3>
+            <p>
+              防災ショップでの接客を初め商品管理や企画、店舗での総合的な業務となります。<br>
+              時期や要望に応じていろいろな商品をお客様に提供するなど、地域の防災に貢献する仕事です。
             </p>
           </div>
         </dd>

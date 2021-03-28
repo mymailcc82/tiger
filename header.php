@@ -71,11 +71,7 @@ $(window).on('load', function () { // 読み込み完了したら実行する
             <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
             <li><a href="https://www.instagram.com/tigeranzen/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
           </ul>
-          <ul class="drawer-content-foot">
-            <li>〒747-0836 ⼭⼝県防府市植松301-4</li>
-            <li><a href="tel:0835-23-5592">0835-23-5592</a></li>
-            <li>受付時間：平⽇9:00〜10:00</li><li> 定休⽇：⼟⽇祝</li>
-          </ul>
+          
         </div>
       </div>
     </div>

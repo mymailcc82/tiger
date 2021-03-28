@@ -3,7 +3,10 @@
     margin-bottom: 50px;
   }
   .sec01{
-    margin-bottom: 75px;
+    margin-bottom: 140px;
+    @include media($mobile){
+      margin-bottom: 80px;
+    }
     &-h2{
       color: $color-main;
       width: 640px;
@@ -216,6 +219,81 @@
           }
         }
       }
+    }
+  }
+  .sec04{
+    margin-bottom: 100px;
+    @include media($mobile){
+      margin-bottom: 60px;
+    }
+    h2{
+      text-align: center;
+      font-size: 4.0rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 60px;
+    }
+    &-table{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+      dd,dt{
+        font-size: 1.6rem;
+        font-weight: normal;
+        padding: 20px 0px;
+      }
+      dt{
+        width: 15%;
+        border-bottom: 1px solid #ff1800;
+        @include media($mobile){
+          width: 30%;
+        }
+      }
+      dd{
+        width: 85%;
+        border-bottom: 1px solid #000000;
+        @include media($mobile){
+          width: 70%;
+        }
+      }
+    }
+    &-btn{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border: 2px solid #ff1800;
+      background-color: #fff;
+      padding: 20px 0px;
+      h3{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+      }
+      a{
+        font-family: $font-en;
+        color: #ff1800;
+        font-size: 4.0rem;
+        text-align: center;
+        display: block;
+        line-height: 1;
+        @include media($mobile){
+          font-size: 3.0rem;
+        }
+        span{
+          font-family: $font-en;
+          color: #ff1800;
+          font-size: 2.7rem;
+          display: inline-block;
+          margin-right: 10px;
+          position: relative;
+          top: -2px;
+          @include media($mobile){
+            font-size: 2.2rem;
+            top: -1px;
+            margin-right: 5px;
+          }
+        }
+      }
+
     }
   }
 

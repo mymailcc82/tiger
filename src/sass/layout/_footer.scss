@@ -150,8 +150,32 @@
       }
     }
     &-info{
-      text-align: center;
+      &-row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      width: 50%;
       margin-bottom: 23px;
+      padding-left: 25px;
+      @include media($middle){
+        padding-left: 10px;
+      }
+      @include media($mobile){
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+      }
+      &:first-child{
+        padding-left: 75px;
+        @include media($middle){
+          padding-left: 10px;
+        }
+        @include media($mobile){
+          padding-left: 0px;
+        }
+      }
+
+
       li{
         display: inline-block;
         font-size: 12px;

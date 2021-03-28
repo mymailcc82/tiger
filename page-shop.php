@@ -9,7 +9,7 @@ Template Name:  shop
     <h1>TIGER PRO SHOP<span>タイガープロショップ</span></h1>
   </div>
   <div class="page-mainvisual">
-    <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/shop-main.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/shop-main.jpg?ver=2.0.0" alt="">
   </div>
   <section class="sec01">
     <div class="content-width">
@@ -21,7 +21,7 @@ Template Name:  shop
       </p>
     </div>
   </section>
-
+  <?php /*
   <section class="sec02">
     <div class="content-width">
       <h2>店内写真</h2>
@@ -57,11 +57,12 @@ Template Name:  shop
       </div>
     </div>
   </section>
+  */ ?>
   <section class="sec03">
     <div class="content-width">
       <div class="sec03-wrap">
         <div class="sec03-wrap-img scroll-fade">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/sec03-img.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/assets/img/shop/sec03-img.jpg?ver=2.0.0" alt="">
         </div>
         <div class="sec03-wrap-txt">
           <h2>お客様のニーズにあわせた商品を</h2>
@@ -73,7 +74,23 @@ Template Name:  shop
         </div>
       </div>
     </div>
-
+  </section>
+  <section class="sec04">
+    <div class="content-width">
+      <h2>店舗情報</h2>
+      <dl class="sec04-table">
+        <dt>所在地</dt>
+        <dd>〒747-0825 山口県防府市大字新田1666-2</dd>
+        <dt>営業時間</dt>
+        <dd>9:30〜17:30</dd>
+        <dt>定休日</dt>
+        <dd>土（隔週）・日・祝</dd>
+      </dl>
+      <div class="sec04-btn">
+        <h3>お電話でのお問い合せはこちら</h3>
+        <a href="tel:0835-23-5592"><span>TEL</span>0835-23-5592</a>
+      </div>
+    </div>
   </section>
 </main>
 

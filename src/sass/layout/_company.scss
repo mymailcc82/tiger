@@ -5,16 +5,36 @@
     }
   }
   &-map{
-    width: 800px;
-    height: 533px;
-    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
     @include media($middle-min){
       width: 100%;
     }
     @include media($mobile){
       width: 100%;
-      height: 350px;
       margin-bottom: 50px;
+    }
+    &-col{
+      width: 48.5%;
+      @include media($mobile){
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &:first-child{
+        margin-right: 3%;
+      }
+      h3{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      &-google{
+        height: 323px;
+        width: 100%;
+        @include media($mobile){
+          height: 250px;
+        }
+      }
     }
   }
 }

@@ -31,11 +31,19 @@
       <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
       <li><a href="https://www.instagram.com/tigeranzen/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
     </ul>
-    <ul class="footer-wrap-info">
-      <li>〒747-0836 ⼭⼝県防府市植松301-4</li>
-      <li><a href="tel:0835-23-5592">0835-23-5592</a></li>
-      <li>受付時間：平⽇9:00〜10:00</li><li> 定休⽇：⼟⽇祝</li>
-    </ul>
+    <div class="footer-wrap-info-row">
+      <ul class="footer-wrap-info">
+        <li>[ 本社 ] 〒747-0825 山口県防府市大字新田1666-2</li>
+        <li><a href="tel:0835-23-5592">0835-23-5592</a></li>
+        <li>受付時間：平⽇9:00〜18:00</li><li> 定休⽇：⼟⽇祝</li>
+      </ul>
+      <ul class="footer-wrap-info">
+        <li>[ 広島営業所 ]〒731-0221 広島県広島市安佐北区可部4-22-17</li>
+        <li><a href="tel:082-554-6272">082-554-6272</a></li>
+        <li>受付時間：平⽇9:00〜18:00</li><li> 定休⽇：⼟⽇祝</li>
+      </ul>
+    </div>
+
     <p class="copyright">
       Copyright©︎ TIGER ANZEN, ALL RIGHT RESERVED
     </p>
