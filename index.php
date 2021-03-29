@@ -85,7 +85,7 @@
           <div class="sec03-wrap-item-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/top/service-item-03.png" alt="">
           </div>
-          <p>⼟⽊建築⽤品販売</p>
+          <p>土木建築資材販売・リース</p>
           </a>
         </div>
 
@@ -103,20 +103,22 @@
 
   <section class="shop scroll-fade">
     <div class="content-width">
-      <div class="shop-wrap">
-        <div class="shop-wrap-txt">
-          <p>⾒て、試して、購⼊できる<br>安全・防災⽤品の専⾨店</p>
-          <h2><img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop-title.png" alt="タイガープロショップ"></h2>
+      <a href="<?php echo home_url();?>/shop/">
+        <div class="shop-wrap">
+          <div class="shop-wrap-txt">
+            <p>⾒て、試して、購⼊できる<br>安全・防災⽤品の専⾨店</p>
+            <h2><img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop-title.png" alt="タイガープロショップ"></h2>
 
-          <div class="com-btn--bg">
-            <a href="<?php echo home_url();?>/shop/">READ MORE</a>
+            <div class="com-btn--bg">
+              <span>READ MORE</span>
+            </div>
           </div>
-        </div>
-        <div class="shop-wrap-img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop.jpg?ver=2.0.0" alt="">
-        </div>
+          <div class="shop-wrap-img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/top/top-shop.jpg?ver=2.0.0" alt="">
+          </div>
 
-      </div>
+        </div>
+      </a>
     </div>
   </section>
 </main>

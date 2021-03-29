@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.0.8">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css?ver=1.2.0">
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/assets/img/com/favicon.png">
 <?php wp_head();?>
 <script type='text/javascript'  src="<?php echo get_template_directory_uri();?>/assets/js/jquery3.4.1.js"></script>
@@ -71,7 +71,7 @@ $(window).on('load', function () { // 読み込み完了したら実行する
             <li><a href="<?php echo home_url();?>/contact/">お問い合わせ</a></li>
             <li><a href="https://www.instagram.com/tigeranzen/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/icon-insta.png" alt="instagram"></a></li>
           </ul>
-          
+
         </div>
       </div>
     </div>

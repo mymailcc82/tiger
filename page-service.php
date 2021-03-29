@@ -40,10 +40,10 @@ Template Name:  service
         <li>その他</li>
       </ul>
       <ul class="service-list-img">
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-05.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-06.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-07.jpg" alt=""></li>
-        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-08.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-01.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-02.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-03.jpg" alt=""></li>
+        <li><img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-sub-04.jpg" alt=""></li>
       </ul>
     </div>
   </section>
@@ -91,10 +91,11 @@ Template Name:  service
           <img src="<?php echo get_template_directory_uri();?>/assets/img/service/service-item-03.jpg" alt="">
         </div>
         <div class="service-wrap-txt">
-          <h2>⼟⽊建築⽤品販売</h2>
+          <h2>土木建築資材販売・リース</h2>
           <p>
-            ⼟⽊建築に必要な、グレーチングやシート、セメント、鉄筋など、幅広く取り揃えております。<br>
-            状況に合わせた安全性と景観、コストを考えた資材を提供しております。
+            土木建築に必要な資材を幅広く取り揃えています。<br>
+            状況に合わせた安全性と景観、コストを考えた資材を提供しております。<br>
+            建築工事で使用するネットやシート等、リース品もございますのでお気軽にお問い合わせください。
           </p>
         </div>
       </div>

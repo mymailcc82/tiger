@@ -23,11 +23,6 @@
         </div>
 
         <div class="single-desc">
-          <?php if(has_post_thumbnail()): ?>
-            <div class="single-desc-sum">
-              <?php the_post_thumbnail(''); ?>
-            </div>
-          <?php endif;?>
           <p>
             <?php the_content(); ?>
           </p>

@@ -205,6 +205,9 @@
     @include media($mobile){
       margin-bottom: 60px;
     }
+    a{
+      display: block;
+    }
     &-wrap{
       display: flex;
       @include media($mobile){
