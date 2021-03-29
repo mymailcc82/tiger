@@ -10411,7 +10411,7 @@ div.wpcf7-response-output {
   padding: 40px 0px 60px;
   overflow: scroll;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 1080px) {
@@ -10419,6 +10419,11 @@ div.wpcf7-response-output {
     min-height: 800px;
     padding: 40px 0px;
   }
+}
+
+.header #drawer-content .drawer-content-wrap-content {
+  min-height: 500px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1080px) {
